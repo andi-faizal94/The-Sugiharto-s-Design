@@ -5,10 +5,11 @@ export default {
     container: {
       center: true,
     },
-    fontFamily: {
-      inter: ['Inter', 'sans-serif'],
+    theme: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
     },
-
     extend: {
       backgroundImage: {
         left: "url('/src/assets/1.png')",
