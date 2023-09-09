@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import Image from '../assets/Image.png';
 import rectangle from '../assets/rectangle.svg';
+import Modal from './Modal/Modal';
 const Home = () => {
+  const [modal, setModal] = useState(false);
   return (
     <section className='w-full flex flex-wrap lg:flex-row justify-between items-center px-10'>
       <div className='text-black bg-[url("./assets/1.png")] w-full lg:w-5/12 h-[463px]'>
@@ -39,6 +42,8 @@ const Home = () => {
           <img src={Image} alt='image' />
         </div>
       </div>
+      {/* <button onClick={() => setModal(!modal)}>Coba</button>
+      {modal && <Modal handleClose={() => setModal(false)} />} */}
     </section>
   );
 };
